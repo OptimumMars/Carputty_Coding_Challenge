@@ -21,8 +21,12 @@
 }
 
 .popup {
-    background-color: lightblue;
-    color: darkblue;
+    display: flex;
+    align-content: center;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
+    background-color: #e3ecfc;
+    color: #8baad9;
     max-width: 20rem;
     min-width: 20rem;
     margin: 0.75rem;
@@ -30,28 +34,29 @@
 }
 
 .triangle {
-    background-color: lightblue;
+    background-color: #e3ecfc;
     max-width: 1rem;
     min-width: 1rem;
     position: absolute;
     transform: rotate(45deg);
     margin-left: 15rem;
-    margin-top: -1.55rem;
+    margin-top: -1.5rem;
     z-index: -1;
 }
 
 .button {
+    padding-bottom: 0.15rem;
     font-size: 100% ;
     text-decoration: none;
     color: white;
-    background-color: #3cb371;
+    background-color: #19cca5;
     border: none;
     border-radius: 0 5px 5px 0;
     transition-duration: 0.5s;
 }
 
 .button:hover {
-    background-color: #68eba3;
+    background-color: #b6f0e4;
   }
 
 .container {

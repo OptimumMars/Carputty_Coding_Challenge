@@ -36,7 +36,7 @@ function MainPage() {
         <div>
             <div className="popup_container">
                 <div className="popup">
-                    <p className="content">${fundraiser.goal - fundraiser.total} still needed to fund this project</p>
+                    <p className="content"><strong>${fundraiser.goal - fundraiser.total}</strong> still needed to fund this project</p>
                 </div>
                 <div className="triangle">.</div>
             </div>
@@ -44,7 +44,7 @@ function MainPage() {
                 <ProgressBar completed={progress}></ProgressBar>
                 <div className="content">
                     <h2 className="header">Only four days left to fund this project</h2>
-                    <p>Join the {fundraiser.donors} other donors who have already supported this project.</p>
+                    <p>Join the <strong>{fundraiser.donors}</strong> other donors who have already supported this project.</p>
                     <form onSubmit={buttonPress}>
                         <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} className="input" />
                         <button type="submit" className="button">Give Now</button>
