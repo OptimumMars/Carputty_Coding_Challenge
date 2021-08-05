@@ -16,6 +16,15 @@
     margin: 1rem;
 }
 
+.popup {
+    background-color: lightblue;
+    color: darkblue;
+    max-width: 20rem;
+    min-width: 20rem;
+    margin: 0.75rem;
+    border-radius: 5px;
+}
+
 .button {
     font-size: 100% ;
     text-decoration: none;
