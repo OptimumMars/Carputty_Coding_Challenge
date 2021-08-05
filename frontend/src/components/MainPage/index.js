@@ -10,17 +10,11 @@ function MainPage() {
         donors: 0,
     }
 
-    // console.log("this is the obj ---", obj)
-
     const [fundraiser, setFundraiser] = useState(obj);
 
     const [amount, setAmount] = useState(5);
 
-    // console.log("this is the fundraiser state ---", fundraiser)
-
     const [progress, setProgress] = useState(0)
-
-    // console.log("this is the progress bar initial state ---", progress)
 
     function buttonPress(e) {
         e.preventDefault();
@@ -36,13 +30,15 @@ function MainPage() {
         setFundraiser(update);
 
         setProgress(bar)
-        // console.log("this is the progress bar new percent ---", progress)
     }
 
     return (
         <div>
-            <div className="popup">
-                <p className="content">${fundraiser.goal - fundraiser.total} still needed to fund this project</p>
+            <div className="popup_container">
+                <div className="popup">
+                    <p className="content">${fundraiser.goal - fundraiser.total} still needed to fund this project</p>
+                </div>
+                <div className="triangle">.</div>
             </div>
             <div className="card">
                 <ProgressBar completed={progress}></ProgressBar>

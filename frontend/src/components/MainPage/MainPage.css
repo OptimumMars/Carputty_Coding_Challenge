@@ -1,7 +1,5 @@
 .card {
-    /* border: solid 0.25rem; */
     margin: 0.75rem;
-    /* padding: 0.75rem; */
     min-width: 20rem;
     max-width: 20rem;
     align-self: center;
@@ -14,6 +12,12 @@
 
 .content {
     margin: 1rem;
+    align-self: center;
+}
+
+.popup_container {
+    max-width: 20rem;
+    min-width: 20rem;
 }
 
 .popup {
@@ -23,6 +27,17 @@
     min-width: 20rem;
     margin: 0.75rem;
     border-radius: 5px;
+}
+
+.triangle {
+    background-color: lightblue;
+    max-width: 1rem;
+    min-width: 1rem;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-left: 15rem;
+    margin-top: -1.55rem;
+    z-index: -1;
 }
 
 .button {
